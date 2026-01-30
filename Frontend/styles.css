@@ -1,0 +1,88 @@
+/* รีเซ็ตค่าเริ่มต้นบางส่วน */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* จัดพื้นหลังทั้งหน้า */
+body {
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* กล่องฟอร์มหลัก */
+.container {
+    width: 400px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวข้อฟอร์ม */
+.header {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ใช้ flex */
+.flex {
+    display: flex;
+}
+
+/* ช่องกรอกข้อมูลแต่ละบรรทัด */
+.form-input {
+    margin-bottom: 15px;
+}
+
+/* label ด้านซ้าย */
+.header-form {
+    width: 80px;
+    padding-top: 6px;
+}
+
+/* input และ textarea */
+.form,
+textarea {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+}
+
+/* ส่วนเพศ */
+.gender .flex div {
+    margin-right: 15px;
+}
+
+/* จัดปุ่มให้อยู่ตรงกลาง */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ปุ่มส่งข้อมูล */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+background-color: #45a049;
+}
