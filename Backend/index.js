@@ -119,8 +119,8 @@ app.get('/users/:id', async (req, res) => {
 //path: = PUT / users/:id สำหรับอัพเดตข้อมูล user ตาม id
 app.put('/users/:id', async (req, res) => {
     try{
-         let id = req.params.id;
-        let updateUser = reqbody;
+        let id = req.params.id;
+        let updateUser = req.body;
         const results = await conn.query('UPDATE users SET ? WHERE id = ?', [updateUser, id]);
         res.json({
             message: 'User updated successfully',
